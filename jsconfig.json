@@ -6,7 +6,7 @@
     "moduleResolution": "node",
     "paths": {
       "@/*": [
-        "src/*"
+        "14_src_消息订阅和发布(pubsub-js)/*"
       ]
     },
     "lib": [
