@@ -41,9 +41,9 @@ export default {
       });
     },
     // 更新
-    updateTodo(id, name) {
+    updateTodo(id, title) {
       this.todos.forEach((todo) => {
-        if (todo.id === id) todo.title = name;
+        if (todo.id === id) todo.title = title;
       });
     },
     // 删除
@@ -135,7 +135,7 @@ body {
 }
 
 .todo-container {
-  min-width: 330px;
+  width: 600px;
   margin: 0 auto;
 }
 .todo-container .todo-wrap {
