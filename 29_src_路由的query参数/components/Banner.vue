@@ -1,10 +1,12 @@
 <template>
-  <h2>我是Home的内容</h2>
+  <div class="col-xs-offset-2 col-xs-8">
+    <div class="page-header"><h2>Vue Router Demo</h2></div>
+  </div>
 </template>
-
-<script>
+  
+  <script>
 export default {
-  name: "Home",
+  name: "Banner",
   mounted() {
     console.log("Home is mounted");
   },
@@ -13,6 +15,6 @@ export default {
   },
 };
 </script>
-
-<style scoped>
+  
+  <style scoped>
 </style>
