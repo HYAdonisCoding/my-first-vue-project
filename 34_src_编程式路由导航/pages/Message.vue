@@ -71,10 +71,10 @@ export default {
     },
   },
   mounted() {
-    // console.log("Massage is mounted");
+    console.log("Massage is mounted");
   },
   beforeDestroy() {
-    // console.log("Massage is beforeDestroy");
+    console.log("Massage is beforeDestroy");
   },
 };
 </script>
