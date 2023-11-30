@@ -14,7 +14,7 @@ const router = new VueRouter({
             path: '/about',
             component: About,
             meta: {
-                isAuth: true,
+                isAuth: false,
                 title: '关于'
             },
         },
@@ -35,20 +35,20 @@ const router = new VueRouter({
                         title: '新闻'
                     },
                     //独享路由守卫
-                    // beforeEnter(to, from, next) {
-                    //     const {
-                    //         isAuth
-                    //     } = to.meta;
-                    //     if (isAuth) {
-                    //         if (localStorage.getItem('shcool') === 'beida') {
-                    //             next();
-                    //         } else {
-                    //             alert('Shcool is not available')
-                    //         }
-                    //     } else {
-                    //         next();
-                    //     }
-                    // },
+                    beforeEnter(to, from, next) {
+                        const {
+                            isAuth
+                        } = to.meta;
+                        if (isAuth) {
+                            if (localStorage.getItem('shcool') === 'beida') {
+                                next();
+                            } else {
+                                alert('Shcool is not available')
+                            }
+                        } else {
+                            next();
+                        }
+                    },
                 },
                 {
                     name: 'xiaoxi',
