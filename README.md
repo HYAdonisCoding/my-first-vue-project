@@ -817,7 +817,7 @@ module.exports = {
    		path:'/home/message/detail',
    		query:{
    		   id:666,
-               title:'你好'
+          title:'你好'
    		}
    	}"
    >跳转</router-link>
@@ -848,7 +848,7 @@ module.exports = {
       			component:Test,
       			children:[
       				{
-                            name:'hello' //给路由命名
+                name:'hello' //给路由命名
       					path:'welcome',
       					component:Hello,
       				}
@@ -873,7 +873,7 @@ module.exports = {
       		name:'hello',
       		query:{
       		   id:666,
-                  title:'你好'
+             title:'你好'
       		}
       	}"
       >跳转</router-link>
@@ -918,7 +918,7 @@ module.exports = {
    		name:'xiangqing',
    		params:{
    		   id:666,
-               title:'你好'
+          title:'你好'
    		}
    	}"
    >跳转</router-link>
